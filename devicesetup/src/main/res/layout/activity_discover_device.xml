@@ -65,6 +65,12 @@
             android:text="@string/troubleshooting"
             android:visibility="gone"/>
 
+        <Button
+            android:id="@+id/action_log_out"
+            style="@style/SparkButton"
+            android:layout_marginBottom="12dp"
+            android:text="@string/log_out"
+            android:visibility="gone"/>
 
         <Button
             android:id="@+id/action_cancel"

@@ -130,13 +130,13 @@ public class DiscoverDeviceActivity extends RequiresWifiScansActivity
         Ui.setTextFromHtml(this, R.id.action_troubleshooting, R.string.troubleshooting);
 
         if (!truthy(sparkCloud.getLoggedInUsername())) {
-            Ui.findView(this, R.id.logged_in_as).setVisibility(View.GONE);
+            // Ui.findView(this, R.id.logged_in_as).setVisibility(View.GONE);
         } else {
-            Ui.setText(this, R.id.logged_in_as,
-                    Phrase.from(this, R.string.you_are_logged_in_as)
-                            .put("username", sparkCloud.getLoggedInUsername())
-                            .format()
-            );
+            // Ui.setText(this, R.id.logged_in_as,
+            //         Phrase.from(this, R.string.you_are_logged_in_as)
+            //                 .put("username", sparkCloud.getLoggedInUsername())
+            //                 .format()
+            // );
         }
 
         Ui.findView(this, R.id.action_log_out).setVisibility(BaseActivity.setupOnly ? View.GONE : View.VISIBLE);

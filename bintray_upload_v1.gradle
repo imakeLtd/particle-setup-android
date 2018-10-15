@@ -31,10 +31,13 @@ artifacts {
 // * My apologies if this turns out not to be true.  Patches welcome!
 Properties authDataProps = new Properties()
 try {
-    authDataProps.load(project.rootProject.file('../bintray_user_auth_secrets.properties').newDataInputStream())
+    logger.error('Bintray_UPLOAD_V1  config file FOUND!!.')
+    authDataProps.load(project.rootProject.file('local.properties').newDataInputStream())
 } catch (Exception ignore) {
     // do nothing; this is the default state for everyone who isn't publishing
     // the lib.
+    logger.error('Bintray config file not found!!.')
+    logger.error(project.rootProject.path)
 }
 
 bintray {

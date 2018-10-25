@@ -2,7 +2,7 @@
 <resources>
 
     <!-- Phrase-templated strings -->
-    <string name="msg_device_not_listed">{device_name} not listed here? Hold the {setup_button_identifier} for three seconds to put it in setup mode; the {indicator_light} should turn {indicator_light_setup_color_name}</string>
+    <string name="msg_device_not_listed">{device_name} not listed here? use the menu to select \'Connection Config\' and then \'Add WiFi\'</string>
     <string name="get_ready_title_text">Time to set up your {device_name}!</string>
     <string name="get_ready_text"><![CDATA[\n
 \u2022 Attach your {device_name} to a Conical Fermenter to power it on.\n\n
